@@ -1,8 +1,14 @@
+import logoImg from '@/asset/logo.png'
+import {Link, Image} from "next"
 export default function MainHeader() {
 
     return (
         <header>
-            <h1>This is Header</h1>
+            <Link href="/">
+                <Image alt="m&j in Malaga logo"
+                src={logoImg}/>
+            </Link>
+            <h1>MJ&aposs Kitchen</h1>
         </header>
     )
 }
