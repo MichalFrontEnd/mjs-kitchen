@@ -1,5 +1,5 @@
 import './globals.css';
-// import MainHeader  from "../components/organisms/main-header/MainHeader"
+import {MainHeader}  from '@/components/organisms/main-header'
 
 export const metadata = {
   title: 'MJs Kitchen',
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             ></path>
           </svg>
         </div>
-        {/* <MainHeader /> */}
+        <MainHeader />
         {children}
       </body>
     </html>
