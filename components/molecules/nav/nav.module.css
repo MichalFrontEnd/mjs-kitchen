@@ -4,7 +4,7 @@
     list-style: none;
     gap: 3rem;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -12,4 +12,14 @@
     content: "|";
     color: aliceblue;
     margin-right: 3rem;
+}
+
+.navlistitem:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 1));
+    font-size: 1.6rem;
+}
+.navlistitem:active {
+    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 1));
+    font-size: 1.6rem;
+    color: var(--pink-lemonade);
 }
