@@ -1,5 +1,5 @@
 import './globals.css';
-import {MainHeader}  from '@/components/organisms/main-header'
+import { MainHeader }  from '@/components/organisms/main-header'
 
 export const metadata = {
   title: 'MJs Kitchen',
