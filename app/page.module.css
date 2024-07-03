@@ -20,62 +20,25 @@
   border-radius: 0.5%;
 }
 
-
 .polaroid:hover {
   animation: bounce 0.4s ease-in-out forwards;
 }
 
-@keyframes bounce {
-  0% {
-    transform: rotate(-5deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  40% {
-    transform: rotate(-2deg);
-  }
-  60% {
-    transform: rotate(1deg);
-  }
-  80% {
-    transform: rotate(-1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .description {
-  display: inherit;
+  display: flex;
+  flex-direction: column;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  color: whitesmoke;
+  gap:unset;
 }
 
 
 
-.card {
+/* .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
@@ -100,32 +63,38 @@
   line-height: 1.5;
   max-width: 30ch;
   text-wrap: balance;
-}
+} */
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+  gap: 5rem;
+  padding: 3rem 0;
 }
 
 
+@keyframes bounce {
+  0% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
