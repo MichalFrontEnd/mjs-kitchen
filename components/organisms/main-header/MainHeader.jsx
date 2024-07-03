@@ -8,7 +8,7 @@ export function MainHeader() {
         <header className={styles.header}>
             <Link href="/" className={styles.logo}>
                 <Image alt="m&j in Malaga logo"
-                src={logoImg}
+                src={logoImg.src}
                 width={200}
                 height={200}/>
             <h1 className={styles.heading}>MJ&apos;s Kitchen</h1>
