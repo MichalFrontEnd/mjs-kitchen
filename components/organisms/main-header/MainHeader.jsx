@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/assets/logo.png";
-import MainHeaderGradient from "./MainHeaderGradient";
+import { MainHeaderGradient } from "./";
 import styles from "./main-header.module.css";
 
 export function MainHeader() {

@@ -17,10 +17,10 @@ export default function Home() {
             className={styles.mainimg}
           />
         </div>
-      <div className={styles.description}>
-        <h1>We are Michal & Joakim</h1>
-        <h2>And this is our recipe collection</h2>
-      </div>
+        <div className={styles.hero}>
+          <h1>We are <span>Michal &amp; Joakim</span></h1>
+          <h2>And this is our recipe collection</h2>
+        </div>
       </div>
       <Nav />
     </main>

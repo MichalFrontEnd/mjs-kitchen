@@ -6,7 +6,7 @@ export function Nav() {
     <nav className={styles.nav}>
       <ul className={styles.navlist}>
         <li className={styles.navlistitem}>
-          <Link href='/recipes' className={styles.navlink}>Browse by Type</Link>
+          <Link href='/recipes' className={styles.navlink}>Browse by Meal Type</Link>
         </li>
         <li className={styles.navlistitem}>
           <Link href='/recipes' className={styles.navlink}>Browse by Protein</Link>
