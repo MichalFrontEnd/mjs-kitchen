@@ -20,7 +20,7 @@ export default function Home() {
         <div className={styles.hero}>
           <h1>We are <span>Michal &amp; Joakim</span></h1>
           <h2>And this is our recipe collection</h2>
-      <Link  href='/recipes' className={styles.cta}>To the foodz</Link>
+          <Link  href='/recipes' className={styles.cta}>To the foodz</Link>
         </div>
       </div>
     </main>
