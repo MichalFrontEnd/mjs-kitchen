@@ -1,0 +1,4 @@
+.active {
+  font-weight: 800;
+  text-shadow: 0 0.1rem 0.5rem rgba(204, 211, 167, 0.7);
+}
