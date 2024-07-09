@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.center}>
+    <main className={`container ${styles.main}`}>
+      <div className={`centered ${styles.content}`}>
         <div className={styles.polaroid}>
           <Image
             src={mainImg.src}
