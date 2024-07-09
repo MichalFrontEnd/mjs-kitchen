@@ -1,25 +1,21 @@
-
 .navlist {
-    display: inline-flex;
-    list-style: none;
-    gap: 3rem;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+  gap: 1.5rem;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
 
 .navlistitem:not(:first-child):before {
-    content: "|";
-    color: aliceblue;
-    margin-right: 3rem;
+  content: "|";
+  color: aliceblue;
+  margin-right: 1.5rem;
 }
 
-.navlistitem:hover {
-    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 1));
-    font-size: 1.6rem;
-}
-.navlistitem:active {
-    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 1));
-    font-size: 1.6rem;
-    color: var(--pink-lemonade);
+.active {
+  background: linear-gradient(90deg, var(--bright-sky), var(--pink-lemonade));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

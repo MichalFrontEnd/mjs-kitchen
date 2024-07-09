@@ -1,9 +1,9 @@
 .header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 0 1rem;
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .heading {

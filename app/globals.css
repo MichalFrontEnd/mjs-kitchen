@@ -50,3 +50,10 @@ a {
   color: white;
   text-decoration: none;
 }
+
+a:hover,
+a:active {
+  /* filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 1)); */
+  font-size: larger;
+  text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
+}

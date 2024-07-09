@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import mainImg from "@/assets/mj.jpg";
+import Link from "next/link";
 
-import { Nav } from "@/components/molecules/nav";
 
 export default function Home() {
   return (
@@ -20,9 +20,9 @@ export default function Home() {
         <div className={styles.hero}>
           <h1>We are <span>Michal &amp; Joakim</span></h1>
           <h2>And this is our recipe collection</h2>
+      <Link  href='/recipes' className={styles.cta}>To the foodz</Link>
         </div>
       </div>
-      <Nav />
     </main>
   );
 }
