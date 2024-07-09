@@ -1,15 +1,9 @@
 /* Home*/
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  max-height: 100vh;
 }
 
 .polaroid {
-  position: relative;
   display: inline-block;
   background: white;
   padding: 1.5rem 0.5rem 4rem;
@@ -68,11 +62,7 @@
   font-weight: 800;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.content {
   gap: 5rem;
   padding: 3rem 0;
 }
