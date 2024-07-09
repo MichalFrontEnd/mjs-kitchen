@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/assets/logo.png";
 import { MainHeaderGradient } from "./";
-import { Nav } from "@/components/molecules/nav";
+import { Nav } from "@/components/organisms/nav";
 import styles from "./main-header.module.css";
 
 export function MainHeader() {

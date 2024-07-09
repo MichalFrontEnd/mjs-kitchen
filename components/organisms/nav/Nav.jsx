@@ -1,15 +1,15 @@
-import Link from "next/link";
 import styles from "./nav.module.css";
+import { NavLink } from "@/components/molecules/navlink";
 
 export function Nav() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navlist}>
         <li className={styles.navlistitem}>
-          <Link href='/recipes' className={styles.navlink}>Browse Recipes</Link>
+          <NavLink href={"/recipes"}>Browse Recipes</NavLink>
         </li>
         <li className={styles.navlistitem}>
-          <Link href='/recipes' className={styles.navlink}>Favorites</Link>
+          <NavLink href={"/favorites"}>Favorites</NavLink>
         </li>
       </ul>
     </nav>
