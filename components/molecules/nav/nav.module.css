@@ -7,12 +7,6 @@
   text-decoration: none;
 }
 
-.navlistitem:not(:first-child):before {
-  content: "|";
-  color: aliceblue;
-  margin-right: 1.5rem;
-}
-
 .active {
   background: linear-gradient(90deg, var(--bright-sky), var(--pink-lemonade));
   background-clip: text;
