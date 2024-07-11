@@ -7,10 +7,12 @@ export function RecipeCard() {
     <article className={styles[recipe-card]}>
         <header>
         <div className={styles.image}>
+          {/* ToDo: add fallback image */}
           <Image src={image} alt={title} fill />
         </div>
         <div className={styles[header-text]}>
           <h2>{title}</h2>
+          {/* Creator as conditional link */}
           <p>by {creator}</p> 
         </div>
       </header>

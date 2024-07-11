@@ -1,1 +1,1 @@
-export { RecipeGrid } from './RecipeGrid.jsx';
+export { RecipesGrid } from './RecipesGrid.jsx';

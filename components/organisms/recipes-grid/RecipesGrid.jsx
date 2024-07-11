@@ -1,10 +1,10 @@
 import styles from "./recipes-grid.module.css";
 import { RecipeCard } from "@/components/molecules/recipe-card";
 
-export function RecipeGrid() {
+export function RecipesGrid(recipes) {
   return (
     <ul className={styles.recipes}>
-      {meals.map((recipe) => (
+      {recipes.map((recipe) => (
         <li key={recipe.id}>
           <RecipeCard {...recipe} />
         </li>
@@ -13,4 +13,4 @@ export function RecipeGrid() {
   );
 }
 
-export default RecipeGrid;
+export default RecipesGrid;
