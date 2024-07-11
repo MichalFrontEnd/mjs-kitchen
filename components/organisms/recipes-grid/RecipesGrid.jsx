@@ -1,7 +1,8 @@
 import styles from "./recipes-grid.module.css";
 import { RecipeCard } from "@/components/molecules/recipe-card";
 
-export function RecipesGrid(recipes) {
+export function RecipesGrid({recipes}) {
+
   return (
     <ul className={styles.recipes}>
       {recipes.map((recipe) => (
