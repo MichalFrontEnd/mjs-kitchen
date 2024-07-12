@@ -1,7 +1,7 @@
 const sql = require('better-sqlite3');
 const db = sql('recipes.db');
 
-const dummyMeals = [
+const dummyRecipes = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
@@ -165,7 +165,7 @@ const dummyMeals = [
 ];
 
 db.prepare(`
-   CREATE TABLE IF NOT EXISTS meals (
+   CREATE TABLE IF NOT EXISTS recipes (
        id INTEGER PRIMARY KEY AUTOINCREMENT,
        slug TEXT NOT NULL UNIQUE,
        title TEXT NOT NULL,
@@ -177,23 +177,35 @@ db.prepare(`
     )
 `).run();
 
-async function initData() {
-  const stmt = db.prepare(`
-      INSERT INTO meals VALUES (
-         null,
-         @slug,
-         @title,
-         @image,
-         @summary,
-         @instructions,
-         @creator,
-         @creator_link
-      )
+function initData() {
+   const stmt = db.prepare(`
+     INSERT INTO recipes (
+       slug,
+       title,
+       image,
+       summary,
+       instructions,
+       creator,
+       creator_link
+     ) VALUES (
+       @slug,
+       @title,
+       @image,
+       @summary,
+       @instructions,
+       @creator,
+       @creator_link
+     )
    `);
+ 
+   for (const recipe of dummyRecipes) {
+     try {
+       stmt.run(recipe);
+     } catch (error) {
+       console.error('Error inserting data:', error);
+     }
+   }
+ }
 
-  for (const meal of dummyMeals) {
-    stmt.run(meal);
-  }
-}
-
-initData();
+ initData();
+console.log('Database initialized with dummy data.');

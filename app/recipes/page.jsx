@@ -5,7 +5,7 @@ import { RecipesGrid } from "@/components/organisms/recipes-grid";
 export async function RecipesPage() {
   const recipes = await getRecipes();
   return (
-    <section className="container">
+    <>
       <header className={styles.header}>
         <h1>Recipes Page</h1>
         <p>Browse by meal type or tag</p>
@@ -13,7 +13,7 @@ export async function RecipesPage() {
       <main className={styles.main}>
         <RecipesGrid recipes={recipes} />
       </main>
-    </section>
+    </>
   );
 }
 
