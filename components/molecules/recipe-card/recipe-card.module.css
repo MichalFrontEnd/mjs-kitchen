@@ -32,8 +32,8 @@ float: right;
   font-style: italic;
 }
 
-.meal h2,
-.meal p {
+.recipe-card h2,
+.recipe-card p {
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ float: right;
   height: 15rem;
 }
 
-.meal img {
+.recipe-card img {
   object-fit: cover;
 }
 
