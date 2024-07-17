@@ -20,7 +20,7 @@ export function RecipeCard({title, slug, image, creator, tags }) {
       <div className={styles.content}>
         {/* list of tags that will be links? */}
         <p className={styles.tags}>{tags}</p>
-        <div className={styles.link}>
+        <div className={styles.actions}>
           <Link href={`/meals/${slug}`}>To full Recipe</Link>
         </div>
       </div>
