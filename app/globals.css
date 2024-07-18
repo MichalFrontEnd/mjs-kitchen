@@ -58,6 +58,10 @@ a:active {
   text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
 }
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {  
   display: flex;
   flex-direction: column;
