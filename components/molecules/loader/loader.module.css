@@ -1,0 +1,21 @@
+.loading {
+    display: flex;
+    color: white;
+    letter-spacing: 0.3rem;
+  }
+  
+  .letter {
+    display: inline-block;
+    animation: enlarge 1.5s infinite;
+  }
+  
+  @keyframes enlarge {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+  }
+  

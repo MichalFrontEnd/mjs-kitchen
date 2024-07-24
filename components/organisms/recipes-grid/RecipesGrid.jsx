@@ -1,7 +1,9 @@
 import styles from "./recipes-grid.module.css";
+import { getRecipes } from '@/lib/recipes'
 import { RecipeCard } from "@/components/molecules/recipe-card";
 
-export function RecipesGrid({recipes}) {
+export async function RecipesGrid() {
+  const recipes = await getRecipes();
 
   return (
     <ul className={styles.recipes}>
