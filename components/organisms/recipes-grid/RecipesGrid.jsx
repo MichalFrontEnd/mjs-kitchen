@@ -7,11 +7,13 @@ export async function RecipesGrid() {
 
   return (
     <ul className={styles.recipes}>
-      {recipes.map((recipe) => (
-        <li key={recipe.id}>
-          <RecipeCard {...recipe} />
-        </li>
-      ))}
+      {recipes &&  
+        recipes.map((recipe) => (
+          <li key={recipe.id}>
+            <RecipeCard {...recipe} />
+          </li>
+      )
+      )}
     </ul>
   );
 }
