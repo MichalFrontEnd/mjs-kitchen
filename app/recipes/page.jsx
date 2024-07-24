@@ -1,9 +1,10 @@
+import { Suspense } from "react";
 import styles from "./page.module.css";
-import { getRecipes } from '@/lib/recipes'
 import { RecipesGrid } from "@/components/organisms/recipes-grid";
+import { Loader } from "@/components/molecules/loader";
 
-export async function RecipesPage() {
-  const recipes = await getRecipes();
+export function RecipesPage() {
+  
   return (
     <>
       <header className={styles.header}>
@@ -11,7 +12,9 @@ export async function RecipesPage() {
         <p>Browse by meal type or tag</p>
       </header>
       <main className={styles.main}>
-        <RecipesGrid recipes={recipes} />
+        <Suspense fallback={<Loader />}>
+         <RecipesGrid />
+        </Suspense>
       </main>
     </>
   );
