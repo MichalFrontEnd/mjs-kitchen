@@ -67,7 +67,7 @@ float: right;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  background: linear-gradient(90deg,var(--mint), var(--grape));
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -75,6 +75,6 @@ float: right;
 
 .actions a:hover,
 .actions a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
-  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+  background: linear-gradient(90deg,var(--mint), var(--flamingo));
+  box-shadow: 0 0 12px rgba(153, 215, 202, 0.9);
 }
