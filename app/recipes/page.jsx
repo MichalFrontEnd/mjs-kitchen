@@ -1,3 +1,4 @@
+// Recipes Page
 import { Suspense } from "react";
 import styles from "./page.module.css";
 import { RecipesGrid } from "@/components/organisms/recipes-grid";
