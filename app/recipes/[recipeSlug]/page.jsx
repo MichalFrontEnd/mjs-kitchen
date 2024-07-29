@@ -1,8 +1,9 @@
-// Recipe Detail Page [slug]
 import styles from "./page.module.css";
 import Image from "next/image";
+import { getRecipe } from '@/lib/recipes';
 
-export function RecipeDetailPage() {
+export function RecipeDetailPage({params}) {
+  const recipe = getRecipe(params.recipeSlug);
   return (
     <>
       <header className={styles.header}>
@@ -10,7 +11,7 @@ export function RecipeDetailPage() {
           <Image fill />
         </div>
         <div className={styles.headerText}>
-          <h1>Title</h1>
+          <h1>{recipe.title}</h1>
           <p className={styles.creator}>
             {/* conditional link */}
             by <a href='#'>name</a>
@@ -20,9 +21,10 @@ export function RecipeDetailPage() {
       <main className={styles.main}>
         <h2 className={styles.subheader}>Ingredients</h2>
         {/* Ingredients component */}
+        <p>Ingredients component Placeholder</p>
         <h2 className={styles.subheader}>Instructions</h2>
-
         {/* Instructions component */}
+        <p>Instructions component Placeholder</p>
       </main>
     </>
   );

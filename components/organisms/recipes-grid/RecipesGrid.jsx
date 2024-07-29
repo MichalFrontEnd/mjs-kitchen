@@ -1,5 +1,5 @@
 import styles from "./recipes-grid.module.css";
-import { getRecipes } from '@/lib/recipes'
+import { getRecipes } from '@/lib/recipes';
 import { RecipeCard } from "@/components/molecules/recipe-card";
 
 export async function RecipesGrid() {
