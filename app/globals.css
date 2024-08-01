@@ -56,7 +56,7 @@ a {
 a:hover:not([type="button"]),
 a:active:not([type="button"]) {
   /* filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 1)); */
-  font-size: larger;
+  font-size: calc(1em * 1.1);
   text-shadow: 0 0 1rem rgba(255, 255, 255, 1);
 }
 
@@ -76,4 +76,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.highlight {
+  background: linear-gradient(90deg,var(--mint), var(--grape));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.highlight:hover {
+  background: linear-gradient(90deg,var(--mint), var(--grape));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0.1rem 0.3rem rgba(185, 184, 184, 0.7);
+
 }
