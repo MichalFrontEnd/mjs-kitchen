@@ -21,7 +21,7 @@ export function RecipeDetailPage({params}) {
           <h1>{recipe.title}</h1>
           <p className={styles.creator}>
             {/* conditional link */}
-            by <a href={recipe.creator_link}>{recipe.creator}</a>
+            by <a href={recipe.creator_link} className="highlight">{recipe.creator}</a>
           </p>
         </div>
       </header>
