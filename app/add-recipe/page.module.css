@@ -48,7 +48,7 @@
   
   .form input:focus,
   .form textarea:focus {
-    outline-color: #f99f2a;
+    outline-color: var(--pink-lemonade);
     background-color: #1f252d;
   }
   
