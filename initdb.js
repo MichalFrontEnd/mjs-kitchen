@@ -170,7 +170,7 @@ db.prepare(`
        slug TEXT NOT NULL UNIQUE,
        title TEXT NOT NULL,
        image TEXT NOT NULL,
-       summary TEXT NOT NULL,
+       ingredients TEXT,
        instructions TEXT NOT NULL,
        creator TEXT NOT NULL,
        creator_link TEXT
