@@ -1,6 +1,7 @@
 /* Add Recipe Page */
 import styles from './page.module.css';
 import { ImagePicker } from '@/components/molecules/image-picker'
+import { InputField } from '@/components/molecules/input-field'
 
 export default function ShareMealPage() {
   return (
@@ -13,34 +14,14 @@ export default function ShareMealPage() {
       <main className={styles.main}>
         <form className={styles.form}>
           <div className={styles.row}>
-          <p>
-            <label htmlFor="title">Title</label>
-            <input type="text" id="title" name="title" required />
-          </p>
+            <InputField name="title" required></InputField>
           </div>
           <div className={styles.row}>
-            <p>
-              <label htmlFor="creator">Creator</label>
-              <input type="text" id="creator" name="creator" required />
-            </p>
-            <p>
-              <label htmlFor="source">Source</label>
-              <input type="email" id="source" name="source" />
-            </p>
+            <InputField name="creator" required></InputField>
+            <InputField name="source"></InputField>
           </div>
-          <p>
-            <label htmlFor="ingredients">Ingredients</label>
-            <textarea type="textarea" id="ingredients" name="ingredients" rows="10" required />
-          </p>
-          <p>
-            <label htmlFor="instructions">Instructions</label>
-            <textarea
-              id="instructions"
-              name="instructions"
-              rows="10"
-              required
-            ></textarea>
-          </p>
+          <InputField type="textarea" name="ingredients" required></InputField>
+          <InputField type="textarea" name="instructions" required></InputField>
           <ImagePicker label="" name='image'/>
           <p className={styles.actions}>
           <button type="submit" className='button-gradient'>Add Recipe</button>
