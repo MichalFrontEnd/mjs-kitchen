@@ -1,5 +1,6 @@
 /* Add Recipe Page */
 import styles from './page.module.css';
+import { ImagePicker } from '@/components/molecules/image-picker'
 
 export default function ShareMealPage() {
   return (
@@ -40,9 +41,9 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-          IMAGE PICKER
+          <ImagePicker label="" name='image'/>
           <p className={styles.actions}>
-          <button type="submit">Add Meal</button>
+          <button type="submit" className='button-gradient'>Add Recipe</button>
           </p>
         </form>
       </main>

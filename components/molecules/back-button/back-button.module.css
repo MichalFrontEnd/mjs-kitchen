@@ -3,16 +3,4 @@
   max-width: fit-content;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(90deg,var(--mint), var(--grape));
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
- .back-button:hover,
- .back-button:active {
-  background: linear-gradient(90deg,var(--mint), var(--flamingo));
-  box-shadow: 0 0 12px rgba(153, 215, 202, 0.9);
 }

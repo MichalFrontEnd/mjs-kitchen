@@ -1,10 +1,10 @@
 /* Add Recipe Page */
 .header {
     gap: 3rem;
-    margin: 3rem auto 5rem auto;
+    margin: 6rem auto 2rem auto;
     width: 90%;
     max-width: 75rem;
-    color: #ddd6cb;
+    color:var(--breeze);
     font-size: 1.5rem;
   }
   
@@ -68,9 +68,7 @@
   .actions button {
     border: 0;
     padding: 0.75rem 2rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
     border: none;
-    color: #ffffff;
     border-radius: 2px;
     cursor: pointer;
     font: inherit;
@@ -78,7 +76,3 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
-  .actions button:hover,
-  .actions button:focus {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
-  }
