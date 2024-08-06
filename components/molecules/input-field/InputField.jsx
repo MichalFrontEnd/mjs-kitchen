@@ -1,9 +1,9 @@
-import styles from './input-field.module.css'
+import styles from './input-field.module.css';
+
 export function InputField({ type = "text", name, required = false }) {
-  
   const capitalize = (string) => {
     return string?.charAt(0).toUpperCase() + string?.slice(1) || '';
-  }
+  };
 
   return (
     <p className={styles.input}>
