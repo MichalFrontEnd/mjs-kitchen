@@ -1,24 +1,11 @@
-/* Add Recipe Page */
+/* Add-Recipe Page */
+
 import styles from "./page.module.css";
 import { ImagePicker } from "@/components/molecules/image-picker";
 import { InputField } from "@/components/molecules/input-field";
+import { uploadRecipe } from "@/lib/actions"
 
 export default function ShareMealPage() {
-    async function uploadRecipe (formData) {
-    "use server";
-
-    const recipe = {
-      title: formData.get("title"),
-      creator: formData.get("creator"),
-      source: formData.get("source") || '',
-      ingredients: formData.get("ingredients"),
-      instructions: formData.get("instructions"),
-      image: formData.get("image") || '',
-    };
-
-    console.log(recipe);
-  };
-
   return (
     <>
       <header className={styles.header}>

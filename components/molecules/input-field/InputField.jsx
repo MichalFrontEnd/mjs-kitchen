@@ -1,3 +1,4 @@
+'use client';
 import styles from './input-field.module.css';
 
 export function InputField({ type = "text", name, required = false }) {
