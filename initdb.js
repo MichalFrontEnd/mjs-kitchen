@@ -6,7 +6,7 @@ const dummyRecipes = [
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
     image: '/images/burger.jpg',
-    summary:
+    ingredients:
       'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
     instructions: `
       1. Prepare the patty:
@@ -28,7 +28,7 @@ const dummyRecipes = [
     title: 'Spicy Curry',
     slug: 'spicy-curry',
     image: '/images/curry.jpg',
-    summary:
+    ingredients:
       'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
     instructions: `
       1. Chop vegetables:
@@ -53,7 +53,7 @@ const dummyRecipes = [
     title: 'Homemade Dumplings',
     slug: 'homemade-dumplings',
     image: '/images/dumplings.jpg',
-    summary:
+    ingredients:
       'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
     instructions: `
       1. Prepare the filling:
@@ -75,7 +75,7 @@ const dummyRecipes = [
     title: 'Classic Mac n Cheese',
     slug: 'classic-mac-n-cheese',
     image: '/images/macncheese.jpg',
-    summary:
+    ingredients:
       "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
       1. Cook the macaroni:
@@ -100,7 +100,7 @@ const dummyRecipes = [
     title: 'Authentic Pizza',
     slug: 'authentic-pizza',
     image: '/images/pizza.jpg',
-    summary:
+    ingredients:
       'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
     instructions: `
       1. Prepare the dough:
@@ -122,7 +122,7 @@ const dummyRecipes = [
     title: 'Wiener Schnitzel',
     slug: 'wiener-schnitzel',
     image: '/images/schnitzel.jpg',
-    summary:
+    ingredients:
       'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
     instructions: `
       1. Prepare the veal:
@@ -144,7 +144,7 @@ const dummyRecipes = [
     title: 'Fresh Tomato Salad',
     slug: 'fresh-tomato-salad',
     image: '/images/tomato-salad.jpg',
-    summary:
+    ingredients:
       'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
     instructions: `
       1. Prepare the tomatoes:
@@ -183,7 +183,7 @@ function initData() {
        slug,
        title,
        image,
-       summary,
+       ingredients,
        instructions,
        creator,
        creator_link
@@ -191,7 +191,7 @@ function initData() {
        @slug,
        @title,
        @image,
-       @summary,
+       @ingredients,
        @instructions,
        @creator,
        @creator_link
