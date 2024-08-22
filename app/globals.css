@@ -113,3 +113,7 @@ a.highlight:hover {
  box-shadow: 0 0 0.75rem rgba(105, 105, 105, 0.9);
 }
 
+.button-gradient:disabled {
+ background: linear-gradient(90deg,#c7ceccbb, #524f51);
+}
+

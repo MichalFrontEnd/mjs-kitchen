@@ -3,7 +3,8 @@
 import styles from "./page.module.css";
 import { ImagePicker } from "@/components/molecules/image-picker";
 import { InputField } from "@/components/molecules/input-field";
-import { uploadRecipe } from "@/lib/actions"
+import { SubmitButton } from "@/components/molecules/submit-button";
+import { uploadRecipe } from "@/lib/actions";
 
 export default function ShareMealPage() {
   return (
@@ -46,12 +47,7 @@ export default function ShareMealPage() {
             name='image'
           />
           <p className={styles.actions}>
-            <button
-              type='submit'
-              className='button-gradient'
-            >
-              Add Recipe
-            </button>
+            <SubmitButton title='Add Recipe' />
           </p>
         </form>
       </main>

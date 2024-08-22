@@ -9,7 +9,7 @@ export function Nav() {
           <NavLink href={"/recipes"}>Browse Recipes</NavLink>
         </li>
         <li className={styles.navlistitem}>
-          <NavLink href={"/favorites"}>Favorites</NavLink>
+          <NavLink href={"/add-recipe"}>Add Recipe</NavLink>
         </li>
       </ul>
     </nav>
