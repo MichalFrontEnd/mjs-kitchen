@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 
 export function RecipeDetailPage({ params }) {
   const recipe = getRecipe(params.recipeSlug);
-  console.log("recipe: ", recipe);
 
   if (!recipe) {
     notFound();
