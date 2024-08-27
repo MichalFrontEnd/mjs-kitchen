@@ -1,12 +1,15 @@
 /* Add-Recipe Page */
+'use client'
 
 import styles from "./page.module.css";
 import { ImagePicker } from "@/components/molecules/image-picker";
 import { InputField } from "@/components/molecules/input-field";
 import { SubmitButton } from "@/components/molecules/submit-button";
 import { uploadRecipe } from "@/lib/actions";
+import { useFormState } from "react-dom";
 
 export default function ShareMealPage() {
+  const [state, formAction] = useFormState(uploadRecipe, {message: null})
   return (
     <>
       <header className={styles.header}>
@@ -17,7 +20,7 @@ export default function ShareMealPage() {
       <main className={styles.main}>
         <form
           className={styles.form}
-          action={uploadRecipe}
+          action={formAction}
         >
           <div className={styles.row}>
             <InputField
@@ -46,6 +49,7 @@ export default function ShareMealPage() {
             label=''
             name='image'
           />
+          {state.message && <p>{state.message}</p>}
           <p className={styles.actions}>
             <SubmitButton title='Add Recipe' />
           </p>
