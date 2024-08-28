@@ -49,7 +49,7 @@ export default function ShareMealPage() {
             label=''
             name='image'
           />
-          {state.message && <p>{state.message}</p>}
+          {state.message && <p className={styles.error}>{state.message}</p>}
           <p className={styles.actions}>
             <SubmitButton title='Add Recipe' />
           </p>
