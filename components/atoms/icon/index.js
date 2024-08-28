@@ -1,0 +1,1 @@
+export { Icon, IconWithText } from './Icon.jsx';

@@ -24,17 +24,9 @@
   }
 
   .form .error{
-    color:var(--breeze);
+    color:var(--blush);
   }
 
-  .error::before {
-    content: '\f071'; 
-    /* font-family: "Font Awesome 6 Free";  */
-    display: inline-block;
-    /* font-weight: 400;  */
-    margin-right: 0.5rem; 
-    font: var(--fa-font-solid);
-  }
 
   .row {
     display: flex;
