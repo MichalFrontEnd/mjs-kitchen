@@ -22,7 +22,20 @@
   .form {
     max-width: 50rem;
   }
-   
+
+  .form .error{
+    color:var(--breeze);
+  }
+
+  .error::before {
+    content: '\f071'; 
+    /* font-family: "Font Awesome 6 Free";  */
+    display: inline-block;
+    /* font-weight: 400;  */
+    margin-right: 0.5rem; 
+    font: var(--fa-font-solid);
+  }
+
   .row {
     display: flex;
     gap: 1rem;

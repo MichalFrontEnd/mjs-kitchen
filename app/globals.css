@@ -117,3 +117,9 @@ a.highlight:hover {
  background: linear-gradient(90deg,#c7ceccbb, #524f51);
 }
 
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
